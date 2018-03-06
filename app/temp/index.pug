@@ -1,0 +1,15 @@
+extends ./modules/_head
+block variables
+  - var title = 'Home page'
+block content
+  a(href="./about.html") go to another page
+  .index__wrap {{ message }}
+  img(src="./img/min.jpg", alt="")
+  
+  script.
+    new Vue({
+        el: '.index__wrap',
+        data: {
+          message: "Hello VUE!!!"
+        }
+    })

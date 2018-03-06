@@ -1,0 +1,47 @@
+body {
+  font-family: 'nova' sans-serif;
+} 
+
+html, body {
+  @include desktop {
+    font-size: 16px;
+  }
+  @include laptop {
+    font-size: 15px;
+  } 
+  @include tablet {
+    font-size: 14px;
+  }
+  @include phone {
+    font-size: 13px;
+  }
+}
+
+.container {
+  width: 1150px;
+  margin: auto;
+  @include desktop {
+    width: 992px;
+  }
+  @include laptop {
+    width: 767px;
+  } 
+  @include tablet {
+    width: 100%;
+    padding: 0 30px;
+  }
+  @include phone {
+    width: 100%;
+  }
+}
+
+.icon {
+  display: inline-block;
+  height: 100%;
+  width: 100%;
+}
+
+.hide__svg {
+  height: 0;
+  width: 0;
+}

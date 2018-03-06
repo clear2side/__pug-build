@@ -1,0 +1,21 @@
+.lower-fading-underline {
+  color: #777;
+  background-size: 100% 1px, 100% 1px, auto;
+  background-position: 50% 100%, 50% 100%, 50% 0;
+  background-repeat: no-repeat, no-repeat, no-repeat;
+  background-origin: padding-box, border-box, padding-box;
+  border-bottom: 1px solid transparent;
+  list-style: none;
+  text-shadow: 0 1px 1px rgba(255, 255, 255, 0.25);
+  text-align: center;
+  background-image: -webkit-linear-gradient(
+      0deg,
+      rgba(0, 0, 0, 0),
+      rgba(0, 0, 0, 0.1) 50%,
+      rgba(0, 0, 0, 0)
+    ),
+    -webkit-linear-gradient(0deg, rgba(255, 255, 255, 0), rgba(255, 255, 255, 0.8)
+          50%, rgba(255, 255, 255, 0)),
+    -webkit-radial-gradient(50% 100%, ellipse cover, rgba(0, 0, 0, 0.05), rgba(0, 0, 0, 0)
+          50%);
+}
